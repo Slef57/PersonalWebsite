@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <script src="contact.js">
+    </script>
+</head>
+<body>
+    <div class="header">
+        <img src="https://www.iee.ihu.gr/wp-content/uploads/2021/05/IEE_logo_v2.svg" alt="IEE logo">
+        <h1>Η προσωπική μου ιστοσελίδα</h1>
+        <h3>Λευτέρης Μελλές</h3>
+    </div>
+    <nav>
+            <a href="index.html">Home</a>
+            <a href="drama.html">Δράμα</a>
+            <a href="film.html">Ταινία</a>
+            <a href="anime.html">Anime list</a>
+            <a href="contact.html" class="active" >Contact</a>
+    </nav>
+    <div id="main" style="height: 1000px;">
+        <section class="column irrelevant">
+        </section>
+        <section class="column">
+            <div class="contact" id="form">
+                <form onsubmit="FormSubmit()">
+                    <label for="email">Email</label> <br>
+                    <input type="email" id="email" placeholder="Το email σου" autofocus required> <br>
+
+                    <label for="onoma">Όνομα</label> <br>
+                    <input type="text" id="onoma" placeholder="Το όνομα σου" required> <br>
+
+                    <label for="mail">Μύνημα</label> <br>
+                    <textarea onkeypress="TextLenghthLimit()" name="mail" id="mail" cols="30" rows="10" placeholder="Μυνημα" required></textarea> <br>
+
+                    <input type="submit" value="Αποστολή">
+                </form>
+            </div>
+        </section>
+        <section class="column irrelevant">
+        </section>
+    </div>
+    <footer>
+        <div class="socials">
+            <h3>My socials</h3>
+            <ul id="soc">
+                <li>
+                    <a href="https://www.instagram.com/lefteris.mel/?hl=el" target="_blank" ><img class="icon" src="images/icons/instagram.png" alt="Instagram icon"></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/profile.php?id=100072763629364" target="_blank"><img class="icon" src="images/icons/facebook.png" alt="facebook icon"></a>
+                </li>
+                <li>
+                    <a href="https://github.com/Slef57" target="_blank"><img class="icon" src="images/icons/github.png" alt="github icon"></a>
+                </li>
+                <li>
+                    <a href="https://discordapp.com/users/656418161796579328" target="_blank"><img class="icon" src="images/icons/discord.png" alt="discord icon"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <button  id="topButton" title="Go to top"><a href='#'>Top</a></button>
+</body>
+</html>
